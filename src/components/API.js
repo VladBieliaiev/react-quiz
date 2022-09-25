@@ -25,8 +25,11 @@ export const API = () => {
       return (
          <>
 
-            {data.length !== step ?
-               <Game api={data} step={step} setStep={setStep} /> : <h1>LIZA</h1>}
+            {data.length !== step ? (
+               <Game api={data} step={step} setStep={setStep} />
+            ) : (
+               <h1>LIZA</h1>
+            )}
          </>
       )
    }
