@@ -1,0 +1,29 @@
+.card-dody{
+   border: 1px solid red;
+   display: flex;
+   background-color: antiquewhite;
+   justify-content: center;
+}
+
+.card-content{
+   display: flex;
+   flex-direction: column;
+}
+
+.card-content__title{
+   font-size: 1.5rem;
+}
+
+.card-content__answers{
+   display: flex;
+   flex-direction: column;
+}
+
+/* .answers__one{
+   display: flex;
+   flex-direction: column;
+}
+.answers__two{
+   display: flex;
+   flex-direction: column;
+} */
