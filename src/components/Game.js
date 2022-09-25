@@ -1,9 +1,20 @@
+import { useState } from "react";
 import { QuizCard } from "./QuizCard"
+import { Results } from "./Results";
 
-export const Game = ({ api, step, setStep }) => {
+export const Game = ({ api }) => {
+   const [step, setStep] = useState(0);
+   const [variant, setVariant] = useState(0);
+
 
    return (
-      <QuizCard api={api} step={step} setStep={setStep} />
-
+      <>
+         {api.length !== step ? (
+            <QuizCard api={api} step={step} setStep={setStep} variant={variant} setVariant={setVariant} />
+         ) : (
+            <Results variant={variant} />
+         )}
+      </>
    )
+
 }
