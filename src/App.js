@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import "./styles/reset.css"
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { API } from "./components/API";
 
