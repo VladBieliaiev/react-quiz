@@ -18,10 +18,10 @@ export const API = () => {
 
 
    if (isLoading) {
-      return <h1>Loading...</h1>
+      return <h1 style={{ "color": "white", "fontSize": "3rem" }}>Loading...</h1>
    }
    if (error) {
-      return <h1>Opss..</h1>
+      return <h1 style={{ "color": "white", "fontSize": "3rem" }}>Opss..</h1>
    }
    if (data) {
 

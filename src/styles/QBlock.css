@@ -14,7 +14,12 @@ body {
    justify-content: center;
    margin: 1rem;
    width: 35rem;
-   /* height: 30rem; */
+}
+
+@media (max-width: 610px) {
+.card-dody{
+   width: 22rem;
+}  
 }
 
 .card-content{
@@ -47,14 +52,35 @@ body {
    font-size: 1rem;
 }
 
+@media (max-width: 610px) {
+   .card-content__title{
+      font-size: 1rem;
+      padding: 1.5rem 2rem;
+   }
+   .card-content__answers{
+      padding: 1rem 2rem;
+   }
+   .variant{
+      padding: 0.4rem 1rem;
+      margin: 0.1rem;
+      font-size: 0.7rem;
+   }
+}
+
 .variant:hover {
    background-color:rgb(248, 236, 221);
 }
-/* .answers__one{
-   display: flex;
-   flex-direction: column;
+
+.results__icon{
+   width: 13rem;
+   height: 13rem;
+   padding: 3rem 3rem 0;
 }
-.answers__two{
-   display: flex;
-   flex-direction: column;
-} */
+
+.results__score {
+   font-family: 'Roboto Slab', serif;
+   text-align: center;
+   font-size: 4rem;
+   padding-bottom: 3rem;
+   font-weight: bold;
+}
