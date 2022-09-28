@@ -1,6 +1,6 @@
 import * as React from 'react';
 import LinearProgress from '@mui/material/LinearProgress';
-import Typography from '@mui/material/Typography';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from '@mui/material/styles';
@@ -21,16 +21,16 @@ export const ProgressBar = ({ step }) => {
 
    return (
       <>
+
          <ThemeProvider theme={theme}>
-            <Box sx={{ width: '10rem' }}>
-               <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: "column" }}>
-                  <Box sx={{ width: "30rem" }}>
+            <Box sx={{ width: '100&' }}>
+               <Box >
+                  <Box sx={{ width: "100%" }}>
                      <LinearProgress variant="determinate" value={step * 10}
                         color="primary"
-                        style={{ width: '30rem', height: "0.6rem", borderRadius: "24px", background: "#fcf6f0", marginTop: "2rem" }} />
+                        style={{ height: "0.5rem", borderRadius: "24px", background: "#fcf6f0", margin: "1.5rem 2rem 0rem", }} />
                   </Box>
                   <Box sx={{ minWidth: 50 }}>
-                     {/* <Typography variant="body2" color="text.secondary">{step}</Typography> */}
                   </Box>
                </Box>
             </Box>
