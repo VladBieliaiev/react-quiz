@@ -54,6 +54,7 @@ body {
    background-color: rgb(252, 246, 240);
    border: 1px solid rgb(209, 200, 200);
    border-radius: 10px;
+   color:black;
    font-family: 'Roboto Slab', serif;
    text-align: left;
    font-size: 1rem;
