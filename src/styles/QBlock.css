@@ -9,9 +9,12 @@ body {
 .card-dody{
    border-radius: 20px;
    display: flex;
+   flex-direction: column;
    background-color: rgb(252, 246, 240);
    box-shadow: 5px 5px 25px rgb(92, 88, 88);
-   justify-content: center;
+   /* justify-content: center; */
+   align-items: center;
+   text-align: center;
    margin: 1rem;
    width: 35rem;
 }
@@ -29,7 +32,7 @@ body {
 
 .card-content__title{
    font-size: 1.5rem;
-   padding: 3rem 2rem 1rem;
+   padding: 2rem 2rem 1rem;
    font-family: 'Roboto Slab', serif;
    font-weight: bold;
 }
@@ -38,7 +41,7 @@ body {
    display: flex;
    flex-direction: column;
    font-family: 'Roboto Slab', serif;
-   padding: 2rem 2.5rem;
+   padding: 2rem 2rem;
 }
 
 .variant{

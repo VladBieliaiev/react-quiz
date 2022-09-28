@@ -1,4 +1,4 @@
-
+import { ProgressBar } from "./ProgressBar";
 import "../styles/QBlock.css";
 
 export const QuizCard = ({ api, step, variant, setStep, setVariant }) => {
@@ -20,6 +20,7 @@ export const QuizCard = ({ api, step, variant, setStep, setVariant }) => {
 
       return (
          <div className="card-dody">
+            <ProgressBar step={step} />
             <div className="card-content">
                <p className="card-content__title">{question}</p>
                <div className="card-content__answers answers">
