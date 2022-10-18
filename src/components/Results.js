@@ -1,6 +1,7 @@
 import "../styles/QBlock.css";
 import logo from "../img/5651387.png"
-export const Results = ({ variant }) => {
+
+export const Results = ({ variant, setVariant, setStep }) => {
 
 
 
@@ -12,6 +13,10 @@ export const Results = ({ variant }) => {
                <p className="results__score">{variant}</p>
             </div>
          </div>
+         <button onClick={() => {
+            setStep(0)
+            setVariant(0)
+         }}>AGAIN !</button>
       </div>
    )
 }

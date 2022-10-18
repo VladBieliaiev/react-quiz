@@ -13,7 +13,7 @@ export const Game = ({ api }) => {
          {api.length !== step ? (
             <QuizCard api={api} step={step} setStep={setStep} variant={variant} setVariant={setVariant} />
          ) : (
-            <Results variant={variant} />
+            <Results variant={variant} setVariant={setVariant} step={step} setStep={setStep} />
          )}
       </>
    )
